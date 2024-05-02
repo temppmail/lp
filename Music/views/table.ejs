@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f5f5f5; color: #333;">
+
+    <div class="container" style="padding: 20px; background-color: #fff; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <form method="get" action="/">
+            <button type="submit" class="btn" style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Add New</button>
+        </form>
+    </div>  
+
+    <h2 style="margin-top: 30px; color: #007bff;">All songs</h2>
+
+    <% if(songs.length > 0) { %>
+
+        <table border="1" style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+            <tr style="background-color: #007bff; color: #fff;">
+                <th style="padding: 10px;">Song Name</th>
+                <th style="padding: 10px;">Film</th>
+                <th style="padding: 10px;">Singer</th>
+                <th style="padding: 10px;">Music Director</th>
+                <th style="padding: 10px;">Actor</th>
+                <th style="padding: 10px;">Actress</th>
+                <th style="padding: 10px;">Actions</th>
+            </tr>
+        
+            <% songs.forEach((song) => { %>
+            <tr>
+                <td style="padding: 10px;"><%= song.songName %></td>
+                <td style="padding: 10px;"><%= song.film %></td>
+                <td style="padding: 10px;"><%= song.singer %></td>
+                <td style="padding: 10px;"><%= song.musicDirector %></td>
+                <td style="padding: 10px;"><%= song.actor %></td>
+                <td style="padding: 10px;"><%= song.actress %></td>
+                <td style="padding: 10px;">
+                    <form method="post" action="/delete/<%= song._id %>">
+                        <input type="submit" value="Delete" style="background-color: #dc3545; color: #fff; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer;">
+                    </form>
+                </td>
+            </tr>
+            <% }) %>
+        
+        </table>
+
+    <% } else { %>
+        <p style="margin-top: 20px;">No songs</p>
+    <% } %>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(6, 6, 176);
+    padding: 30px;
+    color: white;
+    flex-wrap: wrap;
+}
+.input{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.email , .password ,.login{
+    padding: 2px;
+}
+.header input{
+    width: 70px;
+}
+button{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.content{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #999;
+    padding: 30px;
+    color: rgb(6, 6, 176);
+    flex-wrap: wrap;
+
+}
+.image{
+    /* padding: 20px; */
+    margin: 0;
+}
+.form{
+    padding: 20px;
+    margin-left: 0;
+
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form-content{
+    margin: 20px 0 20px 0;
+}
+.big{
+    width: 230px;
+}
+.short{
+    width: 100px;
+}
+label{
+    padding: 10px;
+    margin: 10px;
+}
+p{
+    padding: 10px 0 10px 0 ;
+}
+button{
+    margin-bottom: 10px;
+    background-color: green;
+    color: white;
+}
+hr{
+    border: 1px light azure;
+}
