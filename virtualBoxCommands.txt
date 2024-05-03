@@ -19,3 +19,4 @@
 7)command : scp filename usernameOfAnotherPc@ip_Of_Another_Pc:Another_Machine_PathTo_Save
 	for transfering file to other virtual machine
 
+https://drive.google.com/drive/u/0/folders/1me_nJJh0fvdDOXX3ew2jzGQpoP7f_iFt
